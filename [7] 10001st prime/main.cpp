@@ -3,11 +3,11 @@
 #include <iostream>
 
 unsigned long long findPrime(int n) {
-	unsigned long long prime = 5ull;
 	if (n == 1)
 		return 2;
 	if (n == 2)
 		return 3;
+	unsigned long long prime = 5ull;
 	for (int i = 3; i < n;i++) {
 		prime += 2;
 		for (int j = 3; j <= prime / 2; j += 2) {
