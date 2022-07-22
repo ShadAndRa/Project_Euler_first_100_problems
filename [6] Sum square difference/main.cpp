@@ -4,17 +4,6 @@
 #include <thread>
 #include <ctime>
 
-unsigned long long sumSquareDifference1(int n) {
-	unsigned long long result = 0ull;
-	for (int i = 1; i < n; i++) {
-		for (int j = i + 1; j <= n; j++) {
-			result += i * j;
-		}
-	}
-	result *= 2;
-	return result;
-}
-
 unsigned long long sumSquareDifference(int beg, int end, int trueEnd) {
 	unsigned long long result = 0ull;
 	for (beg; beg < end; beg++) {
@@ -35,11 +24,11 @@ unsigned long long parallelTasks(int end) {
 	int b1, b2, b3, b4;
 	int e1, e2, e3, e4;
 	b1 = 1;
-	e1 = end / 4;
+	e1 = end / 7.69;
 	b2 = e1;
-	e2 = end / 2;
+	e2 = b2 + end / 6.25;
 	b3 = e2;
-	e3 = e2 + e1;
+	e3 = b3 + end / 5;
 	b4 = e3;
 	e4 = end;
 	std::thread t1([&]() {
@@ -64,8 +53,7 @@ unsigned long long parallelTasks(int end) {
 
 int main()
 {
-	std::cout << parallelTasks(10000) << std::endl;
-	//std::cout << sumSquareDifference1(10000) << std::endl;
+	std::cout << parallelTasks(100000) << std::endl;
 	std::cout << clock();
 	system("pause>nul");
 	return 0;
