@@ -15,7 +15,7 @@ unsigned long long sumSquareDifference(int n) {
 
 int main()
 {
-	std::cout << sumSquareDifference(10) << std::endl;
+	std::cout << sumSquareDifference(100) << std::endl;
 	system("pause>nul");
 	return 0;
 }
