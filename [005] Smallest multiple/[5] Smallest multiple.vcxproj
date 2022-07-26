@@ -21,9 +21,10 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{7f68637f-50f8-4a2f-84ca-44ebb08fffad}</ProjectGuid>
-    <RootNamespace>My1Multiplesof3or5</RootNamespace>
+    <ProjectGuid>{2a9f2c4c-7c65-4c02-a121-89beeb48ac2c}</ProjectGuid>
+    <RootNamespace>My5Smallestmultiple</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>[005] Smallest multiple</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">

@@ -3,23 +3,23 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32630.192
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "[1] Multiples of 3 or 5", "[1] Multiples of 3 or 5\[1] Multiples of 3 or 5.vcxproj", "{7F68637F-50F8-4A2F-84CA-44EBB08FFFAD}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "[001] Multiples of 3 or 5", "[001] Multiples of 3 or 5\[1] Multiples of 3 or 5.vcxproj", "{7F68637F-50F8-4A2F-84CA-44EBB08FFFAD}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "[2] Even Fibonacci numbers", "[2] Even Fibonacci numbers\[2] Even Fibonacci numbers.vcxproj", "{95B1EB27-B6BB-4DD5-9BA8-4BC99E34A94B}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "[002] Even Fibonacci numbers", "[002] Even Fibonacci numbers\[2] Even Fibonacci numbers.vcxproj", "{95B1EB27-B6BB-4DD5-9BA8-4BC99E34A94B}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "[3] Largest prime factor", "[3] Largest prime factor\[3] Largest prime factor.vcxproj", "{CA065BA6-858B-4B9A-B199-4470BFC4839B}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "[003] Largest prime factor", "[003] Largest prime factor\[3] Largest prime factor.vcxproj", "{CA065BA6-858B-4B9A-B199-4470BFC4839B}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "[4] Largest palindrome product", "[4] Largest palindrome product\[4] Largest palindrome product.vcxproj", "{65DC0236-FE5D-4D7C-900F-41868ADB255E}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "[004] Largest palindrome product", "[004] Largest palindrome product\[4] Largest palindrome product.vcxproj", "{65DC0236-FE5D-4D7C-900F-41868ADB255E}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "[5] Smallest multiple", "[5] Smallest multiple\[5] Smallest multiple.vcxproj", "{2A9F2C4C-7C65-4C02-A121-89BEEB48AC2C}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "[005] Smallest multiple", "[005] Smallest multiple\[5] Smallest multiple.vcxproj", "{2A9F2C4C-7C65-4C02-A121-89BEEB48AC2C}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "[6] Sum square difference", "[6] Sum square difference\[6] Sum square difference.vcxproj", "{EA1F291B-AF18-4EBA-ACB8-C9EFF57544E4}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "[006] Sum square difference", "[006] Sum square difference\[6] Sum square difference.vcxproj", "{EA1F291B-AF18-4EBA-ACB8-C9EFF57544E4}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "[7] 10001st prime", "[7] 10001st prime\[7] 10001st prime.vcxproj", "{587C72A0-FB50-41BA-BD25-ED4A6BD479C0}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "[007] 10001st prime", "[007] 10001st prime\[7] 10001st prime.vcxproj", "{587C72A0-FB50-41BA-BD25-ED4A6BD479C0}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "[8] Largest product in a series", "[8] Largest product in a series\[8] Largest product in a series.vcxproj", "{22FF4433-39BF-47EB-B557-B9B52BFB6C09}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "[008] Largest product in a series", "[008] Largest product in a series\[8] Largest product in a series.vcxproj", "{22FF4433-39BF-47EB-B557-B9B52BFB6C09}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "[9] Special Pythagorean triplet", "[9] Special Pythagorean triplet\[9] Special Pythagorean triplet.vcxproj", "{773B1D13-7DF5-4124-8A03-15687DF661CD}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "[009] Special Pythagorean triplet", "[009] Special Pythagorean triplet\[9] Special Pythagorean triplet.vcxproj", "{773B1D13-7DF5-4124-8A03-15687DF661CD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

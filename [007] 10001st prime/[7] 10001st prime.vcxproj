@@ -21,9 +21,10 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{95b1eb27-b6bb-4dd5-9ba8-4bc99e34a94b}</ProjectGuid>
-    <RootNamespace>My2EvenFibonaccinumbers</RootNamespace>
+    <ProjectGuid>{587c72a0-fb50-41ba-bd25-ed4a6bd479c0}</ProjectGuid>
+    <RootNamespace>My710001stprime</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>[007] 10001st prime</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">

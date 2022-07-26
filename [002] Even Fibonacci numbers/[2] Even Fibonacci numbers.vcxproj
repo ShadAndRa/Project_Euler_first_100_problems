@@ -21,9 +21,10 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{22ff4433-39bf-47eb-b557-b9b52bfb6c09}</ProjectGuid>
-    <RootNamespace>My8Largestproductinaseries</RootNamespace>
+    <ProjectGuid>{95b1eb27-b6bb-4dd5-9ba8-4bc99e34a94b}</ProjectGuid>
+    <RootNamespace>My2EvenFibonaccinumbers</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>[002] Even Fibonacci numbers</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">

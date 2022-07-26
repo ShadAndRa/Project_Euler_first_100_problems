@@ -21,9 +21,10 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{ca065ba6-858b-4b9a-b199-4470bfc4839b}</ProjectGuid>
-    <RootNamespace>My3Largestprimefactor</RootNamespace>
+    <ProjectGuid>{773b1d13-7df5-4124-8a03-15687df661cd}</ProjectGuid>
+    <RootNamespace>My9SpecialPythagoreantriplet</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>[009] Special Pythagorean triplet</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
