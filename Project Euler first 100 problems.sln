@@ -19,6 +19,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "[7] 10001st prime", "[7] 10
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "[8] Largest product in a series", "[8] Largest product in a series\[8] Largest product in a series.vcxproj", "{22FF4433-39BF-47EB-B557-B9B52BFB6C09}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "[9] Special Pythagorean triplet", "[9] Special Pythagorean triplet\[9] Special Pythagorean triplet.vcxproj", "{773B1D13-7DF5-4124-8A03-15687DF661CD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -91,6 +93,14 @@ Global
 		{22FF4433-39BF-47EB-B557-B9B52BFB6C09}.Release|x64.Build.0 = Release|x64
 		{22FF4433-39BF-47EB-B557-B9B52BFB6C09}.Release|x86.ActiveCfg = Release|Win32
 		{22FF4433-39BF-47EB-B557-B9B52BFB6C09}.Release|x86.Build.0 = Release|Win32
+		{773B1D13-7DF5-4124-8A03-15687DF661CD}.Debug|x64.ActiveCfg = Debug|x64
+		{773B1D13-7DF5-4124-8A03-15687DF661CD}.Debug|x64.Build.0 = Debug|x64
+		{773B1D13-7DF5-4124-8A03-15687DF661CD}.Debug|x86.ActiveCfg = Debug|Win32
+		{773B1D13-7DF5-4124-8A03-15687DF661CD}.Debug|x86.Build.0 = Debug|Win32
+		{773B1D13-7DF5-4124-8A03-15687DF661CD}.Release|x64.ActiveCfg = Release|x64
+		{773B1D13-7DF5-4124-8A03-15687DF661CD}.Release|x64.Build.0 = Release|x64
+		{773B1D13-7DF5-4124-8A03-15687DF661CD}.Release|x86.ActiveCfg = Release|Win32
+		{773B1D13-7DF5-4124-8A03-15687DF661CD}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
