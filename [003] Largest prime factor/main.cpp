@@ -1,26 +1,30 @@
 // https://projecteuler.net/problem=3
 
 #include <iostream>
+#include <cmath>
 
-int main()
-{
-	long long numerator = 600851475143ll;
-	long long result;
-	for (long long t = 2; t <= numerator; t++) {
-		if (numerator % t == 0) {
-			result = numerator / t;
-			for (long long i = 2; i < result; i++) {
-				if (result % i == 0) {
-					result = 0;
+int isPrime(int num);
+
+int main() {
+	long long devidend = 600851475143ll;
+	int numSqrt = sqrt(devidend);
+	for (int devisor = 3; devisor <= numSqrt; devisor += 2) {
+		if (isPrime(devisor)) {
+			if (devidend % devisor == 0) {
+				if (devidend == devisor)
 					break;
-				}
-			}
-			if (result != 0) {
-				break;
+				devidend /= devisor;
 			}
 		}
 	}
-	std::cout << result;
-	system("pause>nul");
+	std::cout << devidend;
 	return 0;
+}
+
+int isPrime(int num) {
+	for (int i = 2; i < num; i++)
+		if (num % i == 0)
+			return 0;
+
+	return 1;
 }

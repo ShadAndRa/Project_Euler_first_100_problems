@@ -2,18 +2,24 @@
 
 #include <iostream>
 
-int main()
-{
+int sumDivisibleByNLessThenT(int num, int target);
+
+int main() {
+	
+	int n1 = 3;
+	int n2 = 5;
 	int result = 0;
-	for (int i = 3; i < 1000; i += 3) {
-		result += i;
-	}
-	for (int i = 5; i < 1000; i += 5) {
-		if (i % 3 == 0)
-			continue;
-		result += i;
-	}
+
+	result += sumDivisibleByNLessThenT(n1, 1000);
+	result += sumDivisibleByNLessThenT(n2, 1000);
+	result -= sumDivisibleByNLessThenT(n1 * n2, 1000);
+
 	std::cout << result;
-	system("pause>nul");
 	return 0;
+}
+
+int sumDivisibleByNLessThenT(int num, int target) {
+	target -= 1;
+	int p = target / num;
+	return num * (p * (p + 1)) / 2;
 }
