@@ -22,9 +22,24 @@ int main() {
 }
 
 int isPrime(int num) {
-	for (int i = 2; i < num; i++)
-		if (num % i == 0)
+	if (num < 2)
+		return 0;
+	if (num < 4)
+		return 1;
+	if (num % 2 == 0)
+		return 0;
+	if (num < 9)
+		return 1;
+	if (num % 3 == 0)
+		return 0;
+	int sqN = sqrt(num);
+	int f = 5;
+	while (f <= sqN) {
+		if (num % f == 0)
 			return 0;
-
+		if (num % (f + 2) == 0)
+			return 0;
+		f += 6;
+	}
 	return 1;
 }

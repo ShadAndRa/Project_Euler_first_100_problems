@@ -2,20 +2,23 @@
 
 #include <iostream>
 
-unsigned long long sumSquareDifference(int n) {
-	unsigned long long result = 0ull;
-	for (int i = 1; i < n; i++) {
-		for (int j = i + 1; j <= n; j++) {
-			result += i * j;
-		}
-	}
-	result *= 2;
-	return result;
+int sumSquareDifference(int n);
+int sumOfSquares(int n);
+int squareOfSum(int n);
+
+int main() {
+	std::cout << sumSquareDifference(100);
+	return 0;
 }
 
-int main()
-{
-	std::cout << sumSquareDifference(100) << std::endl;
-	system("pause>nul");
-	return 0;
+int sumSquareDifference(int n) {
+	return squareOfSum(n) - sumOfSquares(n);
+}
+
+int sumOfSquares(int n) {
+	return n * (2 * n + 1) * (n + 1) / 6;
+}
+
+int squareOfSum(int n) {
+	return (n * (n + 1) / 2) * (n * (n + 1) / 2);
 }
