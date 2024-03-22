@@ -1,31 +1,31 @@
 // https://projecteuler.net/problem=10
 
 #include <iostream>
+#include <cmath>
 
-unsigned long long sumOfPrimes(unsigned top) {
-	unsigned long long sumOfPrimes = NULL;
-	unsigned p = 2;
-	int* nums = new int[top + 1];
-	nums[0] = 0;
-	nums[1] = 0;
-	for (unsigned int i = 2; i <= top; i++) {
-		nums[i] = i;
+constexpr unsigned TARGET = 2000000;
+
+int main() {
+	unsigned limit = sqrt(TARGET);
+	unsigned long long sumOfPrimes = 0;
+	static bool nums[TARGET];
+	for (unsigned i = 0; i < TARGET; i++) {
+		nums[i] = true;
 	}
-	for (p = 2; p*p <= top;) {
-		for (int i = p; i * p <= top; i++) {
-			nums[i * p] = 0;
+	nums[0] = false;
+	nums[1] = false;
+	for (unsigned p = 2; p <= limit;) {
+		for (int i = p; i * p < TARGET; i++) {
+			nums[i * p] = false;
 		}
 		p++;
-		for (p; nums[p] == 0; p++);
+		for (p; nums[p] == false; p++);
 	}
-	for (int i = 0; i <= top; i++) {
-		sumOfPrimes += nums[i];
+	for (unsigned int i = 0; i < TARGET; i++) {
+		if (nums[i]) {
+			sumOfPrimes += i;
+		}
 	}
-	return sumOfPrimes;
-}
-
-int main()
-{
-	std::cout << sumOfPrimes(2000000);
+	std::cout << sumOfPrimes;
 	return 0;
 }

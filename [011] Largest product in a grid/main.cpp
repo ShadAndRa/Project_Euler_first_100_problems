@@ -2,11 +2,11 @@
 
 #include <iostream>
 
-const int ROW = 20;
-const int COLUMN = 20;
+constexpr auto ROW = 20;
+constexpr auto COLUMN = 20;
+constexpr auto TARGET = 4;
 
-int grid[ROW][COLUMN] =
-{
+int grid[ROW][COLUMN] = {
 	{  8,  2, 22, 97, 38, 15,  0, 40,  0, 75,  4,  5,  7, 78, 52, 12, 50, 77, 91,  8 },
 	{ 49, 49, 99, 40, 17, 81, 18, 57, 60, 87, 17, 40, 98, 43, 69, 48,  4, 56, 62,  0 },
 	{ 81, 49, 31, 73, 55, 79, 14, 29, 93, 71, 40, 67, 53, 88, 30,  3, 49, 13, 36, 65 },
@@ -33,11 +33,10 @@ long long findMaxHorizontalProduct	(int(*)[COLUMN], int);
 long long findMaxVerticalProduct	(int(*)[COLUMN], int);
 long long findMaxDiagonalProduct	(int(*)[COLUMN], int);
 
-int main()
-{
-	long long hrMax = findMaxHorizontalProduct	(grid, 4);
-	long long vrMax = findMaxVerticalProduct	(grid, 4);
-	long long dgMax = findMaxDiagonalProduct	(grid, 4);
+int main() {
+	long long hrMax = findMaxHorizontalProduct	(grid, TARGET);
+	long long vrMax = findMaxVerticalProduct	(grid, TARGET);
+	long long dgMax = findMaxDiagonalProduct	(grid, TARGET);
 
 	long long max = hrMax > (vrMax > dgMax ? vrMax : dgMax) ? hrMax : (vrMax > dgMax ? vrMax : dgMax);
 
@@ -46,8 +45,7 @@ int main()
 	return 0;
 }
 
-long long findMaxHorizontalProduct(int(*grid)[COLUMN], int lenght)
-{
+long long findMaxHorizontalProduct(int(*grid)[COLUMN], int lenght) {
 	if (lenght > COLUMN) return 0;
 
 	long long result = 0;
@@ -65,8 +63,7 @@ long long findMaxHorizontalProduct(int(*grid)[COLUMN], int lenght)
 	return result;
 }
 
-long long findMaxVerticalProduct(int(*grid)[COLUMN], int lenght)
-{
+long long findMaxVerticalProduct(int(*grid)[COLUMN], int lenght) {
 	if (lenght > ROW) return 0;
 
 	long long result = 0;
@@ -84,8 +81,7 @@ long long findMaxVerticalProduct(int(*grid)[COLUMN], int lenght)
 	return result;
 }
 
-long long findMaxDiagonalProduct(int(*grid)[COLUMN], int lenght)
-{
+long long findMaxDiagonalProduct(int(*grid)[COLUMN], int lenght) {
 	if (lenght > ROW || lenght > COLUMN) return 0;
 
 	long long result = 0;
@@ -108,7 +104,6 @@ long long findMaxDiagonalProduct(int(*grid)[COLUMN], int lenght)
 
 			if (temp > result) result = temp;
 		}
-
 
 	return result;
 }
